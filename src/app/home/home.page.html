@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-button>
+            <ion-menu-toggle>
+                <ion-icon role="img" name="menu" (click)="toggleMenu()"></ion-icon>
+            </ion-menu-toggle>
+        </ion-button>
+        <ion-title align="center">
+            Résultats Ligue1
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-menu side="start" menuId="mainMenu" contentId="menuContent">
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-title>Menu</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-list>
+                <ion-item>Calendrier</ion-item>
+                <ion-item>
+                    <ion-button (click)="goToSquadsPage()">Equipes</ion-button>
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-menu>
+    <div class="ion-padding">
+        <ion-button expand="block" shape="round">Voir les résultats !</ion-button>
+    </div>
+</ion-content>
